@@ -333,19 +333,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Generate Link functionality
-    const generateLinkButton = document.getElementById("generate-link");
+  const generateLinkButton = document.getElementById("generate-link");
 
-    if (generateLinkButton) {
-        generateLinkButton.addEventListener("click", function() {
-            // Replace this with your public URL once the portfolio is live on the internet
-            const portfolioUrl = "https://yourportfolio.com"; // Example public URL
-            const linkContainer = document.getElementById("link-container");
-            linkContainer.innerHTML = `
-                <p style="font-size: 18px;">Your portfolio link: <a href="${portfolioUrl}" target="_blank" style="color: #007bff;">${portfolioUrl}</a></p>
-            `;
-        });
-    } else {
-        console.error("Generate Link button not found!");
-    }
+if (generateLinkButton) {
+    generateLinkButton.addEventListener("click", function() {
+        // Replace this with your custom public URL once your portfolio is deployed
+        const portfolioUrl = "https://t-sashi-pavan.github.io/portfoliogenerator/portfolio.html";  // Example public URL from GitHub Pages or any platform
+        const linkContainer = document.getElementById("link-container");
+        linkContainer.innerHTML = `
+            <p style="font-size: 18px;">Your portfolio link: <a href="${portfolioUrl}" target="_blank" style="color: #007bff;">${portfolioUrl}</a></p>
+        `;
+    });
+} else {
+    console.error("Generate Link button not found!");
+}
+
 
 });
